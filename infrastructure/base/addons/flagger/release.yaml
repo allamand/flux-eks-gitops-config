@@ -20,8 +20,8 @@ spec:
     crds: CreateReplace
   upgrade:
     crds: CreateReplace
-  dependsOn:
-    - name: ingress-nginx
+  #dependsOn:
+    #- name: ingress-nginx
   values:
     meshProvider: kubernetes
     metricsServer: http://kube-prometheus-stack-prometheus.monitoring:9090
