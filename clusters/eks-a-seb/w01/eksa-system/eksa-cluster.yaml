@@ -27,7 +27,7 @@ spec:
   managementCluster:
     name: eks-a-seb
   workerNodeGroupConfigurations:
-  - count: 1
+  - count: 2
     name: md-0
 
 ---
@@ -46,7 +46,7 @@ metadata:
   namespace: default
 spec:
   branch: main
-  clusterConfigPath: clusters/eks-a-seb/w01
+  clusterConfigPath: clusters/eks-a-seb
   github:
     owner: allamand
     personal: true
