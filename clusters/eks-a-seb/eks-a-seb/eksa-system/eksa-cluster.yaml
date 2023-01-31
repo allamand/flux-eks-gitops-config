@@ -56,5 +56,4 @@ spec:
     personal: true
     repository: flux-eks-gitops-config
   systemNamespace: flux-system
-
 ---

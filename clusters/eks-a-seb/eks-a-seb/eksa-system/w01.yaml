@@ -20,6 +20,9 @@ spec:
     name: w01
   externalEtcdConfiguration:
     count: 1
+  gitOpsRef:
+    kind: FluxConfig
+    name: gitops    
   kubernetesVersion: "1.24"
   managementCluster:
     name: eks-a-seb
@@ -36,4 +39,17 @@ metadata:
 spec: {}
 
 ---
-
+apiVersion: anywhere.eks.amazonaws.com/v1alpha1
+kind: FluxConfig
+metadata:
+  name: gitops
+  namespace: default
+spec:
+  branch: main
+  clusterConfigPath: clusters/w01
+  github:
+    owner: allamand
+    personal: true
+    repository: flux-eks-gitops-config
+  systemNamespace: flux-system
+---
