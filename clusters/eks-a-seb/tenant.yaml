@@ -7,7 +7,7 @@ spec:
   interval: 1m0s
   serviceAccountName: kustomize-controller
   dependsOn:
-    - name: infrastructure
+    #- name: infrastructure
     - name: config
   sourceRef:
     kind: GitRepository
