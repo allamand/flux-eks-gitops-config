@@ -7,4 +7,4 @@ resources:
   #- metrics-server
   - kube-prometheus-stack
   #- nginx-ingress-controller
-  #- flagger
+  - flagger
