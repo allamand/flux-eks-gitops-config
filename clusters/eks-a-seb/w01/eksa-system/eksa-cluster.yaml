@@ -22,7 +22,7 @@ spec:
     count: 1
   gitOpsRef:
     kind: FluxConfig
-    name: gitops    
+    name: w01  
   kubernetesVersion: "1.24"
   managementCluster:
     name: eks-a-seb
@@ -42,7 +42,7 @@ spec: {}
 apiVersion: anywhere.eks.amazonaws.com/v1alpha1
 kind: FluxConfig
 metadata:
-  name: gitops
+  name: w01
   namespace: default
 spec:
   branch: main
