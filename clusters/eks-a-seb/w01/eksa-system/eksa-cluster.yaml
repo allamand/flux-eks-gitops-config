@@ -46,7 +46,7 @@ metadata:
   namespace: default
 spec:
   branch: main
-  clusterConfigPath: clusters/eks-a-seb
+  clusterConfigPath: clusters/w01
   github:
     owner: allamand
     personal: true
